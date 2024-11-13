@@ -1,17 +1,17 @@
 # Merge Two linked Lists
-# class ListNode(object):
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
+class ListNode(object):
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
 
 # Manually create list1 = [1, 2, 4]
-# list1 = ListNode(1)
-# list1.next = ListNode(2)
-# list1.next.next = ListNode(4)
+list1 = ListNode(1)
+list1.next = ListNode(2)
+list1.next.next = ListNode(4)
 
-# list2 = ListNode(1)
-# list2.next = ListNode(3)
-# list2.next.next = ListNode(4)
+list2 = ListNode(1)
+list2.next = ListNode(3)
+list2.next.next = ListNode(4)
 
 
 class Solution(object):
@@ -44,26 +44,8 @@ def print_linked_list(node):
     # print(" -> ".join(map(str, values)))
 
 solution = Solution()
-# merged_list = solution.mergeTwoLists(list1, list2)
+merged_list = solution.mergeTwoLists(list1, list2)
 
 
 # print("Merged List:")
 # print_linked_list(merged_list)
-
-
-# remove duplicates
-
-
-class ListNode(object):
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
-
-head = ListNode(1)
-head.next = ListNode(1)
-head.next.next = ListNode(2)
-
-
-
-class Solution(object):
-    def deleteDuplicates(self, head):
